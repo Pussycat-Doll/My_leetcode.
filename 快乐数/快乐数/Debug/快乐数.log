@@ -1,0 +1,3 @@
+﻿  源.cpp
+d:\比特科技\啊哈，算法\快乐数\快乐数\源.cpp(11): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+  快乐数.vcxproj -> D:\比特科技\啊哈，算法\快乐数\Debug\快乐数.exe
