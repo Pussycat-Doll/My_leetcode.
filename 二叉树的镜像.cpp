@@ -33,4 +33,20 @@ public:
             node->right = cur;
         }
     }
+//    void Mirror(TreeNode *pRoot) //可以在先序遍历或者后序遍历的基础上
+//    {
+//        if(pRoot == nullptr)
+//            return;
+//        if(pRoot->left == nullptr && pRoot == nullptr)
+//            return;
+//        //交换左右结点
+//        TreeNode* node = pRoot->left;
+//        pRoot->left = pRoot->right;
+//        pRoot->right = node;
+//        
+//        if(pRoot->left)
+//            Mirror(pRoot->left);
+//        if(pRoot->right)
+//            Mirror(pRoot->right);
+//    } 
 };
