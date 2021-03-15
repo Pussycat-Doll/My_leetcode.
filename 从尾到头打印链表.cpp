@@ -40,3 +40,35 @@ public:
         return res;
     }
 };
+//    void _reversePrint(ListNode* head, vector<int>& ant)
+//    {
+//        if(head == nullptr)
+//            return;
+//        if(head->next != nullptr)
+//            _reversePrint(head->next,ant);
+//        ant.push_back(head->val);
+//    }
+//    vector<int> reversePrint(ListNode* head) 
+//    {
+//        vector<int> ant;
+//        _reversePrint(head,ant);
+//        return ant;
+//    }
+
+ vector<int> reversePrint(ListNode* head) 
+{
+    stack<int> st;
+    vector<int> ant;
+    ListNode* cur = head;
+    while(cur != nullptr)
+    {
+        st.push(cur->val);
+        cur = cur->next;
+    }
+    while(!st.empty())
+    {
+        ant.push_back(st.top());
+        st.pop();
+    }
+    return ant;
+}
